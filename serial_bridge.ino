@@ -13,13 +13,13 @@ void setup() {
 
 void loop() {
   if (Serial.available()) {
-    blink();
     Serial2.write(Serial.read());
+    blink();
   }
 
   if (Serial2.available()) {
-    blink();
     Serial.write(Serial2.read());
+    blink();
   }
 
   handle_blink();
