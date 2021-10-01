@@ -1,7 +1,7 @@
 #define LED_PIN LED_BUILTIN
 #define BLINK_DURATION 20
 
-int ledState = false;
+bool ledState = false;
 int ledLastBlink = 0;
 
 void setup() {
